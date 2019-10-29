@@ -210,6 +210,7 @@
 						<span><strong>Escobar:</strong> Grupo Médico Máschwitz</span><br>
 						<span><strong>Máschwitz:</strong> Centro Medico Norte</span><br>
 						<span><strong>San Fernando:</strong> Clinica San Pablo</span><br>
+						<span><strong>Vicente Lopez:</strong> Cegavilo</span><br>
 					</p>
 					<a href="#" class="btn btn-primary">Leer más...</a>
 				</div>
@@ -219,6 +220,7 @@
 					<p>
 						<span>Lunes: 17.00 hs – 19.00 hs</span><br>
 						<span>Martes: 16.00 hs – 19.00 hs</span><br>
+						<span>Miercoles: 17.00 hs – 19.00 hs</span><br>
 						<span>Jueves: 16.00 hs – 19.00 hs</span><br>
 						<span>Sabados: 08.30 hs – 11.30 hs</span>
 					</p>
@@ -378,7 +380,7 @@
 				<div class="col-md-6 animate-box text-center">
 					<div class="doctor">
 						<div class="staff-img" style="background-image: url(images/staff-2.jpg);"></div>
-						<h3><a href="#">Pablo Calzeta</a></h3>
+						<h3><a href="#">Pablo Calzetta</a></h3>
 						<span>Gastroenterologo</span>
 						<ul class="qbootstrap-social">
 							<li><a href="#"><i class="icon-facebook2"></i></a></li>
@@ -597,7 +599,7 @@
 		<div class="container">
 			<div class="row animate-box">
 				<div class="col-md-6 col-md-offset-3 text-center qbootstrap-heading">
-					<h2><span>Testimonies</h2>
+					<h2><span>Testimonios</h2>
 					<p>Dignissimos asperiores vitae velit veniam totam fuga molestias accusamus alias autem provident. Odit ab aliquam dolor eius.</p>
 				</div>
 			</div>
@@ -641,7 +643,7 @@
 					<h3>About</h3>
 					<p>Facilis ipsum reprehenderit nemo molestias. Aut cum mollitia reprehenderit. Eos cumque dicta adipisci architecto culpa amet.</p>
 				</div> -->
-				<div class="col-md-3 col-sm-4 col-xs-6 qbootstrap-widget">
+				<div class="col-md-2 col-sm-4 col-xs-6 qbootstrap-widget">
 					<h3>Links</h3>
 					<ul class="qbootstrap-footer-links">
 						<li><a href="#">Department</a></li>
@@ -652,36 +654,37 @@
 					</ul>
 				</div>
 
-				<div class="col-md-3 col-sm-4 col-xs-6 qbootstrap-widget">
-					<h3>Our Services</h3>
+				<div class="col-md-4 col-sm-4 col-xs-6 qbootstrap-widget">
+					<h3>Nuestro servicio</h3>
 					<ul class="qbootstrap-footer-links">
-						<li><a href="#">Heart Surgery</a></li>
-						<li><a href="#">Surgical Treatment</a></li>
-						<li><a href="#">General Treatment</a></li>
-						<li><a href="#">Medical Treatment</a></li>
-						<li><a href="#">Help Desk</a></li>
+						<li><a href="#">Endoscopía Digestiva Alta</a></li>
+						<li><a href="#">Colonoscopías Diagnósticas y Terapéuticas</a></li>
+						<li><a href="#">Gastrostomías Endoscopicas</a></li>
+						<li><a href="#">Polipectomías</a></li>
+						<li><a href="#">Ligaduras de Várices del Esófago</a></li>
+						<li><a href="#">Diagnóstico y Tratamiento Infección por Helicobacter pylori.</a></li>
 					</ul>
 				</div>
 
 				<div class="col-md-5 col-sm-4 col-xs-12 qbootstrap-widget">
 					<h3>Consultas</h3>
-					<form class="contact-form">
+					<form class="contact-form" name="contact-form" method="post" action="send_mail.php">
 						<div class="form-group">
 							<label for="name" class="sr-only">Nombre</label>
-							<input type="name" class="form-control" id="name" placeholder="Nombre">
+							<input type="text" name="first_name" class="form-control" id="name" placeholder="Nombre">
 						</div>
 						<div class="form-group">
 							<label for="email" class="sr-only">Email</label>
-							<input type="email" class="form-control" id="email" placeholder="Email">
+							<input type="email" name="email_address" class="form-control" id="email" placeholder="Email">
 						</div>
 						<div class="form-group">
-							<label for="message" class="sr-only">Mensaje</label>
-							<textarea class="form-control" id="message" rows="3" placeholder="Mensaje"></textarea>
+							<label for="message" class="sr-only">Mensage</label>
+							<textarea class="form-control" name="comments" id="message" rows="3" placeholder="Mensage"></textarea>
 						</div>
 						<div class="form-group">
-							<input type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md" value="Enviar Mensaje">
+							<button type="submit" id="btn-submit" class="btn btn-primary btn-send-message btn-md">Enviar Mensaje</button>
 						</div>
-					</form>
+					</form>	
 				</div>
 			</div>
 		</div>
